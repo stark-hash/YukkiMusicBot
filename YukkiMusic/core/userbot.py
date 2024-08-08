@@ -24,33 +24,34 @@ class Userbot(Client):
         self.one = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING1),
+            session=str(config.STRING1),  # Changed to 'session'
             no_updates=True,
         )
         self.two = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING2),
+            session=str(config.STRING2),  # Changed to 'session'
             no_updates=True,
         )
         self.three = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING3),
+            session=str(config.STRING3),  # Changed to 'session'
             no_updates=True,
         )
         self.four = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING4),
+            session=str(config.STRING4),  # Changed to 'session'
             no_updates=True,
         )
         self.five = Client(
             api_id=config.API_ID,
             api_hash=config.API_HASH,
-            session_name=str(config.STRING5),
+            session=str(config.STRING5),  # Changed to 'session'
             no_updates=True,
         )
+
 
     async def start(self):
         LOGGER(__name__).info(f"Starting Assistant Clients")
